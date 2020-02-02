@@ -1,0 +1,399 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*---------レイアウト-----------*/
+
+
+
+/*----------共通アイテム------------*/
+
+h1{
+	font-size: 40px;
+	font-weight: 200;
+}
+
+h2{
+	font-size:35px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size:20px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.fab {
+	height: 70px;
+	width: 70px;
+}
+
+.title {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+.lead {
+	font-size : 15px;
+}
+
+.section-inner {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.lead_bg_item{
+	height: 40px;
+	width:40px;
+}
+
+.header-item {
+	color: #000000;
+	font-size: 20px;
+}
+
+.btn-primary{
+	background:#F3920B ;
+	border-color: #F3920B;
+}
+
+.btn-primary:hover, .btn-primary:focus, 
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
+.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary, 
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus, 
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background:#FAD39D;
+    color: #ffffff;
+}
+
+/*-------ヘッダー-----------*/
+.img-logo {
+	height: 30px;
+	width: auto;
+}
+/*-------ヒーロー-----------*/
+.hero-message-item {
+	padding-top: 200px;
+	background-color: #D2EEFB;
+}
+
+
+.hero-btn {
+	font-size: 25px;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.hero-img {
+	padding-top : 35px;
+}
+
+.hero-items {
+	padding-top: 30px;
+}
+
+/*--------leadSentence-------*/
+.leadSentence-row {
+	background-color: #D2EEFB;
+}
+
+.leadSentence-text {
+	padding : 15px;
+	
+}
+
+/*--------profilee-------*/
+.profiel-phrase {
+	margin-top : 30px;
+}
+
+.profile-name {
+	margin: 20px;
+	border-bottom: 3px solid #000000;
+}
+
+.profile-role {
+	margin: 7px;
+	font-size: 20px;
+}
+.profiele-sentence, .profiele-qualification{
+	font-size : 10px;
+	margin-top: 10px;
+}
+
+/*-------performance-item-------*/
+#performance {
+	background-color:#d2eefb;
+}
+
+.performance-title {
+	border-bottom: 3px solid #000000;
+}
+
+.performance-item {
+	height: 100%;
+}
+.performance-item-title{
+	font-size:20px;
+	font-weight:700;
+}
+
+.performance-img {
+	display: block;
+	padding: 13px;
+}
+
+.performance-item-sentence{
+	padding: 15px;
+}
+
+/*-------conversion-------*/
+.conversion {
+	background-color: #00306e;
+}
+
+.btn-conversion {
+	font-size:25px;
+	margin-top: 30px;
+	border-radius: 20px;
+	padding-right : 40px;
+	padding-left: 40px;
+}
+
+.conversion-message {
+    color:#ffffff;
+}
+
+/*-------merit-------*/
+.merit-title {
+	border-bottom: 3px solid #000000;
+}
+
+.merit-item {
+	background: #D2EEFB;
+	height: 100%;
+}
+.merit-img {
+	padding:15px;
+}
+
+.merit-item-title {
+	font-size:20px;
+	font-weight:700;
+}
+
+.merit-item-sentence {
+	font-size:13px;
+	padding: 10px;
+	
+}
+
+.merit-movie {
+	margin: 40px;
+}
+
+.movie-invite {
+	font-weight: 600;
+}
+/*-------reason-------*/
+.reason-message {
+	font-weight: 600;
+}
+
+.reason-title {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	border-bottom: 3px solid #000000;
+}
+
+.future-img {
+	margin: 20px;
+}
+
+.img-compare {
+	margin-bottom: 20px;
+}
+/*--interview-title--*/
+
+.interview-title {
+	border-bottom: 3px solid #000000;
+	margin-bottom: 50px;
+}
+
+.interview-man {
+	border-bottom: 1px solid #000000;
+}
+
+
+
+/*--------------receive-----------*/
+
+.howTo-receive-title {
+	margin-top : 60px;
+	font-weight: 700;
+	color:#FFFFFF;
+}
+
+.howTo-receive-message {
+	font-size: 25px;
+	margin-top: 20px;
+	color:#FFFFFF;
+}
+
+/*--------------receive-----------*/
+
+.contact-message {
+	font-size: 25px;
+	padding-top: 170px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.contact-message-second {
+	font-size: 25px;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;	
+}
+
+.sns-share {
+	margin-top: 20px;
+}
+
+@media screen and (max-width:1025px){
+	/*--共通--*/
+	.section-inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	/*--hero--*/
+	.hero-phrase {
+		font-size : 35px;
+	}
+	.hero-cacth-copy {
+		font-size:13px;
+	}
+	.hero-btn {
+	font-size: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 35px;
+	padding-left: 35px;
+    }
+	
+	.hero-message-item {
+	padding-top: 130px;
+	}
+	
+	/*--------profilee-------*/
+   .profiel-phrase {
+	margin-top : 15px;
+	font-size: 35px;
+    }
+
+   .profile-name {
+	margin: 10px;
+	font-size: 30px;
+    }
+
+    .profile-post {
+	margin: 5px;
+	font-size: 18px;
+    }
+    .profiele-sentence, .profiele-qualification{
+	font-size : 8px;
+	margin-top: 10px;
+    }  
+	
+	/*-------performance-item-------*/
+
+
+    .performance-item {
+	height: 100%;
+}
+.performance-item-title{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.performance-img {
+	display: block;
+	padding: 13px;
+}
+
+.performance-item-sentence{
+	font-size: 13px;
+}
+	
+/*-------conversion-------*/
+	
+	.conversion-message {
+		font-size: 28px;
+	}
+
+    .btn-conversion {
+	font-size:25px;
+	margin-top: 30px;
+	border-radius: 20px;
+	padding-right : 40px;
+	padding-left: 40px;
+    }
+	/*-------merit-------*/
+
+   .merit-item-title {
+	font-size:18px;
+	font-weight:700;
+}
+
+   .merit-item-sentence {
+	font-size:13px;
+    }
+/*--------------receive-----------*/
+
+.contact-message {
+	font-size: 20px;
+	padding-top: 100px;
+}
+
+.contact-message-second {
+	font-size: 20px;	
+}	
+}
+	
+	
+	
+
+
+@media screen and (max-width:992px){
+  
+	
+}
+
+@media screen and (max-width: 762px){
+}
+
+@media screen and (max-width: 573px){
+}
