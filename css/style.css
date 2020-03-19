@@ -1,3 +1,6 @@
+@import url("responsive.css") screen
+
+;
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -6,19 +9,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
-/*---------レイアウト-----------*/
 
 
 
 /*----------共通アイテム------------*/
+body {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+}
 
 h1{
 	font-size: 40px;
-	font-weight: 200;
+	font-weight: 500;
 }
 
 h2{
-	font-size:35px;
+	font-size:30px;
 }
 
 h3 {
@@ -42,15 +47,23 @@ strong {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-weight: 700;
+	font-size: 25px;
 }
+
+.strong-orange {
+	color: #F3920B;
+	font-weight: bold;
+}
+
+
 
 .lead {
 	font-size : 15px;
 }
 
 .section-inner {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .lead_bg_item{
@@ -87,29 +100,61 @@ strong {
 	height: 30px;
 	width: auto;
 }
+
+.header-item {
+	font-size: 16px;
+}
+
+.nav-conversion {
+		display: none;
+}
 /*-------ヒーロー-----------*/
+.hero-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-phrase {
+	font-size: 26px;
+}
+
+.hero-cacth-copy {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
 .hero-message-item {
-	padding-top: 200px;
+	padding-top: 10px;
 	background-color: #D2EEFB;
+	order: 2;
 }
 
 
 .hero-btn {
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: 700;
 	border-radius: 10px;
 	margin-top: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 40px;
-	padding-left: 40px;
+	margin-bottom: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 35px;
+	padding-left: 35px;
 }
 
-.hero-img {
-	padding-top : 35px;
+.hero-main-img {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;	
+	order:1;
+	height: 300px;
+	background-position: center top 50px;
 }
 
 .hero-items {
-	padding-top: 30px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 /*--------leadSentence-------*/
@@ -118,27 +163,56 @@ strong {
 }
 
 .leadSentence-text {
-	padding : 15px;
-	
+	padding : 20px;
+    font-size: 12px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /*--------profilee-------*/
-.profiel-phrase {
+.profile-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-wrap-chara {
+	order: 2;
+}
+
+.profile-wrap-img {
+	order: 1;
+}
+
+.profile-phrase {
 	margin-top : 30px;
+	display: none;
 }
 
 .profile-name {
-	margin: 20px;
+	margin: 10px;
 	border-bottom: 3px solid #000000;
+	font-size: 25px;
+	font-weight: bold;
 }
 
-.profile-role {
-	margin: 7px;
-	font-size: 20px;
+.profile-post {
+	margin: 5px;
+	font-size: 18px;
 }
-.profiele-sentence, .profiele-qualification{
-	font-size : 10px;
+.profile-sentence, .profile-qualification{
+	font-size : 13px;
 	margin-top: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/*-----bannar-----*/
+.imuran_bannar {
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+.imuran_bannar:hover {
+	opacity: 0.6;
 }
 
 /*-------performance-item-------*/
@@ -165,6 +239,7 @@ strong {
 
 .performance-item-sentence{
 	padding: 15px;
+	font-size: 13px;
 }
 
 /*-------conversion-------*/
@@ -173,17 +248,40 @@ strong {
 }
 
 .btn-conversion {
-	font-size:25px;
+	font-size:20px;
 	margin-top: 30px;
 	border-radius: 20px;
 	padding-right : 40px;
 	padding-left: 40px;
+	font-weight: bold;
 }
 
 .conversion-message {
     color:#ffffff;
+	font-size: 18px;
+	font-weight: bold;
 }
 
+.conversion-message-plus {
+    color:#ffffff;
+	font-size: 13px;
+	margin-top: 20px;
+	font-weight: 500px;
+}
+
+.conversion-special-message {
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom:0px;
+	background: #ffffff;
+	font-size: 20px;
+}
+
+.conversion-special-btn {
+	background: #FFFFFF;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
 /*-------merit-------*/
 .merit-title {
 	border-bottom: 3px solid #000000;
@@ -192,14 +290,19 @@ strong {
 .merit-item {
 	background: #D2EEFB;
 	height: 100%;
+	margin-bottom: 15px;
 }
 .merit-img {
-	padding:15px;
+	padding-top:10px;
 }
 
 .merit-item-title {
-	font-size:20px;
+	font-size:15px;
 	font-weight:700;
+}
+
+.merit-item-title-span {
+	font-size: 12px;
 }
 
 .merit-item-sentence {
@@ -208,22 +311,17 @@ strong {
 	
 }
 
-.merit-movie {
-	margin: 40px;
-}
-
-.movie-invite {
-	font-weight: 600;
-}
 /*-------reason-------*/
 .reason-message {
 	font-weight: 600;
+	font-size: 13px;
 }
 
 .reason-title {
 	margin-top: 30px;
 	margin-bottom: 15px;
 	border-bottom: 3px solid #000000;
+	font-size: 18px;
 }
 
 .future-img {
@@ -233,167 +331,381 @@ strong {
 .img-compare {
 	margin-bottom: 20px;
 }
+
+
+/*--------growth-plan---------*/
+
+.growth-plan {
+	margin-top: 50px;
+}
+
+.growth-plan-contents {
+	padding-right: 5px;
+	padding-left: 5px
+}
+
+.growth-plan-month {
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.growth-plan-phrase {
+	margin-top: 20px;
+	padding-bottom:30px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.growth-plan-img1 {
+    background-image: url("../images/growth-plan-1.jpg");
+	background-size: cover;
+}
+
+.growth-plan-img2{
+    background-image: url("../images/growth-plan-2.jpg");
+	background-size: cover;
+}
+
+.growth-plan-img3 {
+	background-image: url("../images/growth-plan-3.jpg");
+	background-size: cover;
+}
+
+.growth-attention small {
+	font-size: 5px;
+	color:#817E7E;
+}
+
+/*-------bannar---------*/
+.seminer_bannar {
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.seminer_bannar:hover {
+	opacity: 0.6;
+}
+
 /*--interview-title--*/
+.interview-item {
+	margin-bottom: 50px;
+}
 
 .interview-title {
 	border-bottom: 3px solid #000000;
-	margin-bottom: 50px;
+	margin-top: 0px;
+	margin-bottom: 30px;
 }
 
 .interview-man {
 	border-bottom: 1px solid #000000;
 }
 
+.interview-message {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 8px;
+}
 
 
 /*--------------receive-----------*/
 
 .howTo-receive-title {
-	margin-top : 60px;
+	margin-top : 40px;
 	font-weight: 700;
 	color:#FFFFFF;
+	font-size: 20px;
 }
 
 .howTo-receive-message {
-	font-size: 25px;
-	margin-top: 20px;
+	font-size: 15px;
+	margin-top: 30px;
 	color:#FFFFFF;
 }
 
-/*--------------receive-----------*/
+
+/*--------------contact-----------*/
 
 .contact-message {
-	font-size: 25px;
-	padding-top: 170px;
+	font-size: 18px;
+	padding-top: 10px;
 	padding-right: 20px;
 	padding-left: 20px;
 }
 
+.contact-phone {
+	font-size: 16px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 600;
+}
+
+
 .contact-message-second {
-	font-size: 25px;
-	padding-top: 30px;
+	font-size: 18px;
+	padding-top: 10px;
 	padding-right: 20px;
 	padding-left: 20px;	
 }
 
+/*-----sns-btn-------*/
 .sns-share {
 	margin-top: 20px;
 }
+/* ボタン全体 */
+.flowbtn{
+font-family:'Arial',sans-serif;/* 好きなフォントを指定してね */
+border-radius:4px;
+position:relative;
+display:inline-block;
+width:66px;
+height:58px;
+font-size:30px;
+color:#fff!important;
+transition:.5s;
+text-decoration:none;
+box-shadow:0 1px 2px #999;
+}
+.flowbtn i{
+position:relative;
+bottom:0px;
+padding-top: 5px;
+}
+/* Facebook */
+.fl_fb1{
+background:#3b5998;
+}
+/* YouTube */
+.fl_yu1{
+background:#fc0d1c;
+}
+/* LINE */
+.fl_li1{
+background:#00c300;
+}
+/* Instagram紫グラデ背景 */
+.insta_btn1{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;
+}
+/* Instagramオレンジグラデ背景 */
+.insta_btn1:before{
+content: '';
+position:absolute;
+top:33px;
+left:-20px;
+width:80px;
+height:50px;
+background:-webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+/* ボタン内テキスト調整 */
+.flowbtn div{
+font-size:11px;	
+font-weight:bold;
+letter-spacing:0;
+position:relative;
+bottom:30px;
+}
+/* ボタンマウスホバー時 */
+.flowbtn:hover{
+-webkit-transform:translateY(-5px);
+-ms-transform:translateY(-5px);
+transform:translateY(-5px);
+text-decoration:none;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti{
+padding:0!important;
+list-style: none;
+}
+/* ボタン全体の位置調整 */
+.snsbtniti{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-around;
+}
+/* ボタン同士の余白調整 */
+.snsbtniti li{
+flex:0 0 25%;
+text-align:center!important;
+}
 
-@media screen and (max-width:1025px){
-	/*--共通--*/
-	.section-inner {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	
-	/*--hero--*/
-	.hero-phrase {
-		font-size : 35px;
-	}
-	.hero-cacth-copy {
-		font-size:13px;
-	}
-	.hero-btn {
+/*-------footer-----------*/
+footer {
+	background: #D2EEFB;
+	padding: 20px
+}
+
+.com-info-title {
 	font-size: 20px;
-	border-radius: 10px;
-	margin-top: 20px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-right: 35px;
-	padding-left: 35px;
-    }
-	
-	.hero-message-item {
-	padding-top: 130px;
-	}
-	
-	/*--------profilee-------*/
-   .profiel-phrase {
-	margin-top : 15px;
-	font-size: 35px;
-    }
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 
-   .profile-name {
-	margin: 10px;
-	font-size: 30px;
-    }
-
-    .profile-post {
-	margin: 5px;
+.com-name, .com-cief {
 	font-size: 18px;
-    }
-    .profiele-sentence, .profiele-qualification{
-	font-size : 8px;
-	margin-top: 10px;
-    }  
-	
-	/*-------performance-item-------*/
-
-
-    .performance-item {
-	height: 100%;
-}
-.performance-item-title{
-	font-size:18px;
-	font-weight:bold;
+	font-weight: 600;
+	margin-bottom: 7px;
 }
 
-.performance-img {
-	display: block;
-	padding: 13px;
-}
 
-.performance-item-sentence{
-	font-size: 13px;
+.com-detail {
+	font-size: 16px;
+	margin-bottom: 5px;
 }
 	
-/*-------conversion-------*/
-	
-	.conversion-message {
-		font-size: 28px;
-	}
+/*---------sepcialmissage---------*/
 
-    .btn-conversion {
-	font-size:25px;
+.specialmessage {
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+.specialmessage-phrase {
+	font-size: 30px;
+	margin-bottom: 0px;
+	border-bottom: 2px solid #000000;
+}
+
+.specialmessage p {
+	padding-bottom: 20px;
+	font-size: 17px;
+}
+
+.specialmessage strong {
+	font-size: 18px;
+	color:#F1484A;
+}
+
+.specialmessage-phrase-strong {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.specialmessage img {
+	height: 250px;
+	width: 45opx;
+}
+
+.img-wrap {
+	text-align: center;
 	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+.btn-specialmessage {
+	font-size:20px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	border-radius: 20px;
 	padding-right : 40px;
 	padding-left: 40px;
-    }
-	/*-------merit-------*/
-
-   .merit-item-title {
-	font-size:18px;
-	font-weight:700;
 }
 
-   .merit-item-sentence {
-	font-size:13px;
-    }
-/*--------------receive-----------*/
 
-.contact-message {
+/*------form------*/
+
+.form-body {
+	background: #d2eefb;
+}
+
+.form-title {
 	font-size: 20px;
-	padding-top: 100px;
+	font-weight: bold;
 }
-
-.contact-message-second {
-	font-size: 20px;	
-}	
-}
-	
-	
-	
-
-
-@media screen and (max-width:992px){
-  
+.form-text {
+	margin-top: 50px;
+	padding: 30px;
+	background: #ffffff;
+	border-radius: 7px;
 	
 }
 
-@media screen and (max-width: 762px){
+.form-main {
+	padding-top: 50px;
 }
 
-@media screen and (max-width: 573px){
+.form-submit {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+    font-size: 20px;
+	border-radius: 10px;
+}
+
+
+.form-check {
+	margin-top: 10px;
+}
+
+
+
+.cp_ipcheck {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipcheck input[type='checkbox'] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_ipcheck label {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	padding-right: 10px;
+	padding-left: 35px;
+	cursor: pointer;
+}
+.cp_ipcheck label::before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: ' ';
+	border: 2px solid #f3920b;
+}
+.cp_ipcheck input[type='checkbox'] + label::before {
+	border-radius: 4px;
+}
+.cp_ipcheck input[type='checkbox']:checked + label {
+	padding-left: 10px;
+	color: #ffffff;
+}
+.cp_ipcheck input[type='checkbox']:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #f3920b;
+}
+/* Transition */
+.cp_ipcheck label, .cp_ipcheck label::before {
+	-webkit-transition: 0.25s all ease;
+	        transition: 0.25s all ease;
+}
+
+.confirm-title {
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.confirm-text {
+	font-size: 16px;
+	margin-bottom: 13px;
+}
+
+.thanks-sentence {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+@media screen and (min-width:576px){
+	/*------header-----*/
+
+	/*------hero------*/
+	
+	.hero-phrase {
+		font-size: 40px;
+	}
+	.hero-main-img {
+		height: 350px;
+	}
+}
+
+@media screen and (min-width:768px){
+	/*--ヘッダー----*/
+	.nav-conversion {
+		display: block;
+	}
+	
+	/*----ヒーロー---*/
+	.hero-cacth-copy {
+		font-size: 18px;
+	}
+	
+	.hero-phrase {
+		font-size: 26px;
+	}
+	.hero-message-item {
+		order: 1;
+		padding-top: 120px;
+	}
+    .hero-main-img {
+		height: 500px;
+		order: 2;
+		background-position: right -20px top 50px;
+
+	}
+	
+	/*----leadSentence-----*/
+	.leadSentence-text{
+		font-size: 20px;
+	}
+	
+	/*---プロフィール----*/
+	
+	.profile-flex {
+		flex-direction: row;
+	}
+	
+	.profiel-wrap-chara {
+		order: 1;
+	}
+	
+	.profile-wrap-img {
+		order: 2;
+		padding-top: 70px;
+	}
+	
+	.profile-phrase {
+		display: block;
+		font-size: 25px;
+		
+	}
+	
+	.performance-title {
+		font-size: 30px;
+	}
+	
+	.performance-item-title {
+		font-size: 18px;
+	}
+	
+	.performance-item-sentence{
+		font-size: 10px;
+		padding-right: 0px;
+	}
+	/*-------conversion-------*/
+	
+	.conversion-message {
+		font-size: 25px;
+	}
+	
+	.conversion-message-plus {
+		font-size: 14px;
+	}
+
+    .btn-conversion {
+	font-size:20px;
+    }
+	
+	.conversion-special-message {
+		font-size: 25px;
+	}
+	
+	/*--------merit---------*/
+	
+	.merit-title {
+		font-size: 30px;
+	}
+	
+	.merit-item-title {
+		font-size: 13px;
+	}
+	
+	.merit-item-sentence {
+		font-size: 5px;
+	}
+	
+	.reason-title {
+		font-size: 30px;
+	}
+	
+	.reason-message {
+		font-size: 20px;
+	}
+	
+	/*-------growth-plan--------*/
+	
+	.growth-plan-month {
+		font-size: 25px;
+	}
+	
+	.growth-plan-phrase {
+		font-size: 18px;
+		padding-bottom: 50px;
+	}
+	
+	/*-----intervew------*/
+	
+	.interview-title {
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	
+	.interview-man {
+		font-size:25px;
+	}
+	
+	.interview-post {
+		font-size: 10px;
+	}
+	.interview-message {
+		font-size: 13px;
+	}
+	
+	/*----recieve-----*/
+	
+	.howTo-receive-title {
+		font-size: 25px;		
+	}
+	.howTo-receive-message {
+		font-size: 18px;
+	}
+	
+	.contact-message  {
+		padding-top: 70px;
+		font-size: 15px;
+	}
+	.contact-message-second {
+		padding-top: 30px;
+		font-size: 15px;
+	}
+	
+	.sns-share {
+		margin-top: 30px;
+
+	}
+	/*---form----*/
+	.form-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+	
+}@media screen and (min-width:992px){
+	
+	
+}
+
+@media screen and (min-width:1024px){
+	/*--共通--*/
+	.section-inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	/*------hreader----*/
+	
+	.nav-conversion {
+		display: block;
+	}
+	
+	/*--hero--*/
+	.hero-phrase {
+		font-size : 33px;
+	}
+	.hero-cacth-copy {
+		font-size:13px;
+	}
+	.hero-btn {
+	font-size: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 35px;
+	padding-left: 35px;
+    }
+	
+	.hero-message-item {
+	padding-top: 70px;
+	}
+	.hero-items {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+	
+	.hero-main-img {
+		background-position: right top 50px;
+	}
+	/*--leadSentence------*/
+	.leadSentence-text {
+		font-size: 30px;
+	}	
+
+	/*--------profilee-------*/
+   .profiel-phrase {
+	margin-top : 15px;
+	font-size: 30px;
+    }
+
+   .profile-name {
+	margin: 10px;
+	font-size: 30px;
+    }
+
+    .profile-post {
+	margin: 5px;
+	font-size: 18px;
+    }
+    .profiele-sentence, .profiele-qualification{
+	margin-top: 10px;
+    }  
+	
+	/*-------performance-item-------*/
+	
+	.performance-title {
+		font-size: 40px;
+	}
+
+.performance-item-title{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.performance-img {
+	display: block;
+	padding: 13px;
+}
+
+.performance-item-sentence{
+	font-size: 13px;
+}
+	
+/*-------conversion-------*/
+	
+	.conversion-message {
+		font-size: 25px;
+	}
+	
+	.conversion-message-plus {
+		font-size: 15px;
+	}
+
+    .btn-conversion {
+	font-size:25px;
+    }
+	
+	.conversion-special-message {
+		font-size: 30px;
+	}
+	/*-------merit-------*/
+	
+	.merit-title {
+		40px;
+	}
+
+   .merit-item-title {
+	font-size:15px;
+	font-weight:700;
+}
+
+   .merit-item-sentence {
+	font-size:13px;
+    }
+	
+ /*-----------reason------------*/
+	
+	.reason-title {
+		font-size: 40px;
+	}
+	
+	.reason-message {
+		font-size: 30px;
+	}
+
+.growth-plan-month {
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.growth-plan-phrase {
+	margin-top: 50px;
+	padding-bottom:110px;
+	font-weight: bold;
+	font-size: 23px;
+}
+/*-------interview---------------*/
+	.interview-post {
+		font-size: 13px;
+	}
+	
+/*--------------receive-----------*/
+
+.contact-message {
+	font-size:20px;
+	padding-top: 60px;
+}
+
+	.contact-phone {
+		font-size: 18px;
+	}
+
+.contact-message-second {
+	font-size: 20px;	
+}	
+}
+
+@media screen and (min-width:1280px){
+	
+	/*-------hero------*/
+	
+	.hero-main-img {
+		background-position: bottom  bottom;
+		height: 700px;
+	}
+	
+	.hero-message-item {
+		padding-top: 100px;
+	}
+	.hero-cacth-copy {
+		font-size: 25px;
+	}
+	
+	.hero-phrase {
+		font-size: 45px;
+	}
+	
+	.hero-btn {
+		font-size: 30px;
+	}
+	
+	/**-------profiel-----**/
+	
+	.profile-phrase {
+		font-size: 40px;
+	}
+	
+	.profile-name {
+		font-size: 30px;
+	}
+	
+	/*-------conversion---------*/
+	
+	.conversion-message {
+		font-size: 30px;
+	}
+	
+	.conversion-message-plus {
+		font-size: 20px;
+	}
+	
+	.conversion-special-message {
+		font-size: 40px;
+	}
+	
+	/*------contact-------*/
+	
+	.contact-message, .contact-message-second {
+		font-size: 30px
+	}
+	.contact-phone {
+		font-size: 25px;
+	}
+}
+
+
+@media screen and (min-width:2560px){
+	.hero-main-img {
+		height: 1000px;
+	}
+}

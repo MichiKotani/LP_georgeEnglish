@@ -1,0 +1,11 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.george-english\.com$
+RewriteRule ^(.*) https://george-english.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/GeorgeEnglish
+RewriteRule ^(.*)GeorgeEnglish$ https://george-english.com/$1 [R=301,L]
+order deny,allow
